@@ -162,7 +162,7 @@ nav {
 
 main {
     font-family: 'Gentium Basic', serif;
-    font-size: 1.8em;
+    font-size: 1.2em;
     line-height: 1.5em;
     h2 {
         padding-left: 0.1em;
@@ -223,11 +223,11 @@ footer {
 
 @media only screen and (min-width: 480px) {
     header {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
     main,
     footer {
-        font-size: 2.5em;
+        font-size: 1.1em;
     }
 
 }
@@ -241,7 +241,7 @@ footer {
 
     main,
     footer {
-        font-size: 2.5em;
+        font-size: 1.8em;
     }
 
     nav {
@@ -291,28 +291,28 @@ footer {
         font-size: 1.5em;
     }
     nav {
-        border-top: 1px dotted @color1;
+        visibility: visible;
+        display: inline;
+        width: 95%;
+        border: 0;
         ul {
+            margin-top: 1em;
+            border-top: 1px dotted @color1;
             li {
+                display: inline-block;
                 a {
+                    margin-right: 1.5em;
                     font-size: 1em;
 
+                }
+                &:last-child {
+                    margin-right: -1em;
                 }
             }
         }
     }
     .menu-toggle {
-        position: absolute;
-        top: 2.5em;
-        left: 2em;
-        &:before {
-            font-size: 3.8em;
-        }
-    }
-    .menu-toggle--close {
-        &:before {
-            font-size: 2em;
-        }
+        display: none;
     }
     main {
         font-size: 1.3em;
@@ -380,7 +380,7 @@ footer {
         list-style: none;
         text-align: center;
         li {
-            display: inline-block;
+            display: inline;
             margin-right: 1em;
         }
         .setElementColors(@color1,
